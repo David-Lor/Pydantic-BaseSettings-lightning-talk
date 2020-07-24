@@ -1,2 +1,2 @@
-pydantic >= 1.4
+pydantic>=1.4
 python-dotenv

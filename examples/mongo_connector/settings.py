@@ -7,7 +7,7 @@ from typing import Optional
 # # Installed # #
 from pydantic import BaseSettings
 
-__all__ = ("settings",)
+__all__ = ("mongo_settings",)
 
 
 class MongoSettings(BaseSettings):
@@ -21,4 +21,4 @@ class MongoSettings(BaseSettings):
         env_prefix = "MONGO_"
 
 
-settings = MongoSettings()
+mongo_settings = MongoSettings()
