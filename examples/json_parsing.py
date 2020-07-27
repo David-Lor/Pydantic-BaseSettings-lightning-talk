@@ -14,7 +14,11 @@ class MySettings(BaseSettings):
     
     class Config:
         env_prefix = "APP_"
+        env_file = ".env"
 
 
 settings = MySettings()
 print("App hosts:", settings.hosts)
+if settings.ports:
+	print("App HTTP port:", settings.ports.http)
+	print("App MQTT port:", settings.ports.mqtt)
